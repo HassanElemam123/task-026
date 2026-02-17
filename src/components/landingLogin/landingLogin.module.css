@@ -1,0 +1,168 @@
+.page {
+  min-height: 90vh;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+}
+
+.card {
+  width: 520px;
+  max-width: 94vw;
+  background: #fff;
+  padding: 34px 44px;
+  border-radius: 10px;
+}
+
+
+.title {
+  text-align: center;
+  color: #D9176C;
+  font-weight: 700;
+  margin: 0 0 22px;
+}
+
+.form {
+  display: grid;
+  gap: 10px;
+}
+
+.label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #222222;
+  margin-top: 6px;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #ececec;
+  border-radius: 6px;
+  padding: 0 12px;
+  outline: none;
+  background: #fff;
+}
+
+.input::placeholder {
+  color: #b5b5b5;
+}
+
+.input:focus {
+  border-color: #D9176C;
+  box-shadow: 0 0 0 3px rgba(233, 30, 99, 0.12);
+}
+
+.passwordWrap {
+  position: relative;
+}
+
+.eyeBtn {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  opacity: 0.6;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 4px;
+}
+
+.remember {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  font-size: 12px;
+  color: #444;
+}
+
+.link {
+  font-size: 12px;
+  color: #D9176C;
+  text-decoration: none;
+}
+.link:hover {
+  text-decoration: underline;
+}
+
+.primaryBtn {
+  height: 42px;
+  border: 0;
+  border-radius: 6px;
+  background: #D9176C;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+}
+
+.primaryBtn:hover {
+  filter: brightness(0.95);
+}
+
+.smallText {
+  text-align: center;
+  font-size: 12px;
+  color: #555;
+  margin: 6px 0 0;
+}
+
+.divider {
+  display: grid;
+  place-items: center;
+  margin: 10px 0 6px;
+  position: relative;
+}
+
+.divider::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: #eee;
+  top: 50%;
+}
+
+.divider span {
+  position: relative;
+  background: #fff;
+  padding: 0 10px;
+  font-size: 12px;
+  color: #777;
+}
+
+.socialBtn {
+  height: 42px;
+  border: 1px solid #eee;
+  background: #fff;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.socialBtn:hover {
+  background: #fafafa;
+}
+
+.googleIcon, .fbIcon {
+  width: 18px;
+  height: 18px;
+  margin-bottom: 3px;
+}
+
+
+.error {
+  color: #D9176C;
+  font-size: 11px;
+  margin-top: -4px;
+}

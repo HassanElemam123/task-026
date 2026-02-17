@@ -1,0 +1,14 @@
+.Hero {
+  width: 100%;
+  min-height: 40vh;
+  background: url("../../../public/landing.png") no-repeat center center / cover;
+  background-color: rgba(0, 0, 0, 0.495);
+  background-blend-mode: overlay;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 90px 16px 40px;
+  box-sizing: border-box;
+}

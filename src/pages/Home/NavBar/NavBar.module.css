@@ -1,0 +1,141 @@
+.NavBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.LeftSide {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  min-width: 0;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+}
+
+.LogoContainer img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.LogoName {
+  color: #ffffff;
+  font-size: 10px;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+.Divider {
+  width: 1px;
+  height: 22px;
+  background: rgba(255, 255, 255, 0.35);
+  flex-shrink: 0;
+}
+
+.Links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s;
+}
+
+.Links a:hover {
+  opacity: 0.5;
+}
+
+a.active {
+  color: #f4a340 !important;
+}
+
+.Btns {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.Login {
+  border: none;
+  padding: 9px 16px;
+  border-radius: 8px;
+  background: #d9176c;
+  color: #ffffff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.SignUp {
+  border: 2px solid #d9176c;
+  padding: 8px 16px;
+  border-radius: 8px;
+  background: #ffffff;
+  color: #d9176c;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.Login:hover,
+.SignUp:hover {
+  transform: translateY(-1px);
+  opacity: 0.95;
+}
+
+/* تظبيط الموبايل */
+@media (max-width: 900px) {
+
+  .Links {
+    gap: 17px;
+  }
+}
+
+@media (max-width: 520px) {
+  .NavBar {
+    flex-direction: column;
+    gap:25px;
+    padding: 14px 20px;
+  }
+  .Btns {
+    gap: 8px;
+  }
+  .Links {
+    gap: 20px;
+  }
+  .Login,
+  .SignUp {
+    border-radius: 10px;
+    font-size: 13px;
+    min-width: 120px;     /* غيّر الرقم براحتك */
+    padding: 10px 14px;   /* يخليها أكبر شوية */
+    text-align: center;
+  }
+}

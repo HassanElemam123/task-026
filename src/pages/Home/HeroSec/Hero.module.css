@@ -1,0 +1,105 @@
+.Hero {
+  width: 100%;
+  min-height: 100vh;
+  background: url("../../../public/landing.png") no-repeat center center / cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  padding: 90px 16px 40px;
+  box-sizing: border-box;
+}
+
+.searchBox {
+  position: relative;
+
+  width: min(540px, 92vw);
+  height: 56px;
+
+  border-radius: 30px;
+  overflow: hidden;
+}
+
+.Hero input {
+  width: 100%;
+  height: 100%;
+
+  padding: 14px 120px 14px 20px;
+  border: none;
+  border-radius: 30px;
+
+  font-size: clamp(14px, 2.4vw, 16px);
+  background-color: #fff;
+  outline: none;
+}
+
+.Hero input::placeholder {
+  color: #a7a7a7;
+}
+
+.Hero input:focus {
+  box-shadow: 0 0 0 3px rgba(217, 23, 108, 0.18);
+}
+
+.searchBox::after {
+  content: "";
+  position: absolute;
+  right: 0;
+  top: 0;
+
+  width: 70px;
+  height: 100%;
+
+  background: #d9176c url("/icons/search-1.svg") no-repeat center;
+  background-size: 25px;
+
+  border-radius: 0 30px 30px 0;
+  cursor: pointer;
+}
+
+.searchBox::before {
+  content: "";
+  position: absolute;
+  right: 95px;
+  top: 50%;
+  transform: translateY(-50%);
+
+  width: 22px;
+  height: 25px;
+
+  background: url("/icons/mic-frame.svg") no-repeat center;
+  background-size: contain;
+
+  opacity: 0.8;
+  z-index: 2;
+  cursor: pointer;
+}
+
+/* موبايل */
+@media (max-width: 520px) {
+  .Hero {
+    padding-top: 80px;
+  }
+
+  .searchBox {
+    width: min(420px, 92vw);
+    height: 52px;
+  }
+
+  .Hero input {
+    padding-right: 98px; 
+  }
+
+  .searchBox::after {
+    width: 56px;
+    background-size: 22px;
+  }
+
+  .searchBox::before {
+    right: 72px;
+    width: 18px;
+    height: 20px;
+  }
+}

@@ -1,0 +1,220 @@
+.Footer{
+  height: 45svh;
+  background-color: #3B2F4A;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 40px;
+  align-items: stretch;
+  color: #FFFFFF;
+  gap: 20px;
+}
+.NavBar {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  padding: 14px 40px;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(6px);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.LeftSide {
+  display: flex;
+  align-items: center;
+  gap: clamp(10px, 2vw, 20px);
+  min-width: 0;
+}
+
+.LogoContainer {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-shrink: 0;
+  margin-right: 20px;
+}
+
+.LogoContainer img {
+  width: 22px;
+  height: 22px;
+  object-fit: contain;
+}
+
+.LogoName {
+  color: #ffffff;
+  letter-spacing: 1.3px;
+  font-weight: 400;
+  font-size: 10px;
+  text-transform: capitalize;
+  white-space: nowrap;
+}
+
+
+.Links {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.Links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.Links a:hover {
+  opacity: 0.85;
+}
+
+a.active {
+  color: #f4a340;
+}
+
+.Ubber{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.LeftSide{
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  min-width: 0;
+}
+
+.Links{
+  display: flex;
+  align-items: center;
+  gap: 18px;
+}
+
+.RightSide{
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-shrink: 0;
+}
+
+.RightSide img{
+  width: 22px;
+  height: 22px;
+  display: block;
+}
+
+hr {
+  border: none;
+  background-color:rgba(255, 255, 255, 0.2);
+  height: 2px;
+}
+
+.Lower{
+  width:100%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  gap: 16px;
+}
+
+.Language{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  padding: 8px 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255,255,255,.25);
+}
+
+.Language img{
+  width:18px;
+  height:18px;
+  display:block;
+}
+
+.Language select{
+  background: transparent;
+  border: 0;
+  outline: 0;
+  color: #fff;
+  font-size: 12px;
+  cursor: pointer;
+}
+.Language select option{
+  color:#111; 
+}
+
+.Footer{
+  min-height: 45svh;
+  height: auto;
+}
+
+/*  Mobile / Tablet */
+@media (max-width: 768px) {
+  .Footer{
+    padding: 24px 16px;
+  }
+
+  .Ubber{
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    text-align: center;
+  }
+
+  .LeftSide{
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .LogoContainer{
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .Links{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+  .RightSide{
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+  }
+
+  .Lower{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 12px;
+  }
+
+  .Language{
+    width: fit-content;
+  }
+}
+
+/*  Small phones */
+@media (max-width: 420px) {
+  .Links a{
+    font-size: 14px;
+  }
+
+  .Footer{
+    gap: 16px;
+  }
+}
